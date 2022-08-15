@@ -1,0 +1,296 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+:root{
+    --main-color:#ff7200;
+    --main-transition:0.3s;
+}
+a{
+    text-decoration: none;
+}
+input::placeholder{
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+input{
+    color: white;
+}
+.section-one{
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+}
+.section-one::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000073;
+    z-index: -1;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header{
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.header .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header .content .box-one h2{
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.header .content .box-two ul{
+    display: flex;
+    align-items: center;
+}
+.header .content .box-two ul li{
+    padding-left: 60px;
+}
+.header .content .box-two ul li a{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition: var(--main-transition);
+}
+.header .content .box-two ul a:hover{
+    color:var(--main-color) ;
+}
+::marker {
+    display: none;
+    color: #ffffff00;
+}
+.header .content .box-three{
+    display: flex;
+}
+.header .content .box-three input[type="submit"]{
+    border: none;
+    padding: 10px 25px;
+    background-color: var(--main-color);
+    margin-left: -2px;
+    color: white;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.header .content .box-three input[type="submit"]:hover{
+    color: black;
+}
+.header .content .box-three input[type="text"]{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+}
+.sec-two{
+    margin-top: 70px;
+}
+.sec-two .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.sec-two .content .box-one{
+    flex-basis: 70%;
+}
+.sec-two .content .box-one h1{
+    color: white;
+    font-size: 55px;
+    max-width: 410px;
+    margin-bottom: 0;
+    font-family: auto;
+}
+.sec-two .content .box-one h1 span{
+    font-size: 65px;
+    color: var(--main-color);
+}
+.sec-two .content .box-one p{
+    color: white;
+    line-height: 1.8;
+    max-width: 762px;
+    letter-spacing: 1.2px;
+    margin-bottom: 35px;
+}
+.sec-two .content .box-one a{ 
+    padding: 10px 50px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    color: black;
+    font-size: 18px;
+    transition: var(--main-transition);
+}
+.sec-two .content .box-one a:hover{
+    background-color: white;
+}
+.sec-two .content .box-two{
+    padding: 20px 25px;
+    background-color: rgb(4 5 8);
+    /* flex-basis: 28%; */
+    border-radius: 15px;
+    width: 300px;
+}
+
+.sec-two .content .box-two .text{
+    background-color: white;
+    margin: auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.sec-two .content .box-two .text h2{
+    color: var(--main-color);
+}
+.sec-two .content .box-two .input{
+    margin-top: 25px;
+}
+.sec-two .content .box-two .input input {
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.sec-two .content .box-two .input input[type="submit"] {
+    background-color: var(--main-color);
+    font-weight: bold;
+    border-radius: 10px;
+    border-bottom: none;
+    margin-top: 7px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.sec-two .content .box-two .input input[type="submit"]:hover{
+    background-color: white;
+    color: black;
+}
+.sec-two .content .box-two .info{
+
+}
+.sec-two .content .box-two .info p:first-child{
+    color: white;
+    text-align: center;
+    max-width: 164px;
+    margin: auto;
+}
+.sec-two .content .box-two .info p:last-child{
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-family: auto;
+}
+.sec-two .content .box-two .info p a {
+    color: var(--main-color);
+}
+.sec-two .content .box-two .icons{
+    padding: 10px;
+    display: flex;
+}
+.sec-two .content .box-two .icons i{
+    font-size: 25px;
+    padding-left: 20px;
+    color: white;
+    transition: var(--main-transition);
+}
+.sec-two .content .box-two .icons i:hover{
+   color: var(--main-color);
+}
+@media (max-width: 768px) {
+    .section-one {
+        height: auto;
+    }
+    .header .content {
+       display: block;
+    }
+    .box-one {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .box-two {
+        margin-top: 20px;
+    }
+    .header .content .box-two ul {
+        margin: auto;
+        width: fit-content;
+    }
+    .header .content .box-two ul li {
+        margin: 0 10px;
+        padding-left: 0;
+    }
+    .header .content .box-two ul li a {
+        font-size: 12px;
+    }
+    .header .content .box-three {
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .sec-two {
+        margin-top: 0px;
+        padding-bottom: 100px;
+    }
+    .sec-two .content {
+        display: block;
+    }
+    .sec-two .content .box-one h1 {
+        font-size: 50px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .sec-two .content .box-one h1 span {
+        font-size: 55px;
+    }
+    .sec-two .content .box-two {
+        margin: auto;
+        margin-top: 30px;
+    }
+
+}
+@media (max-width: 1200px) {
+    .header .content {
+        flex-direction: column;
+    }
+    .header .box-one {
+        margin-bottom: 30px;
+    }
+    .header .box-two {
+        margin-bottom: 30px;
+    }
+}
